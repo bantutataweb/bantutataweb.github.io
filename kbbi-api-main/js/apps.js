@@ -3,7 +3,7 @@ $(document).ready(()=>{
         var kata = $("#input_kata").val();
             halaman = document.getElementById("search")
             // console.log(halaman) 
-            $.getJSON("https://kbbi-api-amm.herokuapp.com/search?q="+kata, (json) => {
+            $.getJSON("https://kbbi-api-zhirrr.vercel.app/api/kbbi?text="+kata, (json) => {
                 // console.log(json)
                 var judul = json["data"]["resultLists"][0]["kata"];
                     arti  = json["data"]["resultLists"][0]["arti"];
